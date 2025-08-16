@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="sr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="favicon.ico">
+  <title>Moj grad – Kontakt</title>
+</head>
+<body>
+  <header>
+    <img src="fotografije/logo.png" alt="Logo sajta" width="100" height="100">
+    <h1>Kontakt</h1>
+    <nav>
+      <a href="index.html">Početna</a> |
+      <a href="istorija.html">Istorija</a> |
+      <a href="galerija.html">Galerija</a> |
+      <a href="restorani.html">Restorani</a> |
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Pošaljite poruku</h2>
+    <form action="#" method="post">
+      <p>
+        <label for="ime">Ime i prezime</label><br>
+        <input type="text" id="ime" name="ime" placeholder="Vaše ime i prezime" required>
+      </p>
+      <p>
+        <label for="email">Email</label><br>
+        <input type="email" id="email" name="email" placeholder="Primer: primer@gmail.com" required>
+      </p>
+      <p>
+        <label>Tema</label><br>
+        <input type="radio" id="tema-pitanje" name="tema" value="pitanje">
+        <label for="tema-pitanje">Pitanje</label>
+        <input type="radio" id="tema-sugestija" name="tema" value="sugestija" checked>
+        <label for="tema-sugestija">Sugestija</label>
+        <input type="radio" id="tema-kritika" name="tema" value="kritika">
+        <label for="tema-kritika">Kritika</label>
+      </p>
+      <p>
+        <label for="kategorija">Kategorija</label><br>
+        <select id="kategorija" name="kategorija">
+          <option value="informacije">Informacije</option>
+          <option value="poseta">Organizacija posete</option>
+          <option value="saradnja">Saradnja</option>
+        </select>
+      </p>
+      <p>
+        <label for="poruka">Poruka</label><br>
+        <textarea id="poruka" name="poruka" rows="6" cols="40" placeholder="Vaša poruka"></textarea>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="novosti" value="da"> Želim da primam obaveštenja
+        </label>
+      </p>
+      <p>
+        <button type="submit">Pošalji</button>
+        <button type="reset">Obriši</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>Sva prava su zadržana! Zabranjeno je kopiranje sadržaja.</p>
+  </footer>
+</body>
+</html>
